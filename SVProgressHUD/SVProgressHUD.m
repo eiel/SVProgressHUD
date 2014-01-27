@@ -244,7 +244,7 @@ static const CGFloat SVProgressHUDRingThickness = 6;
     BOOL imageUsed = (self.imageView.image) || (self.imageView.hidden);
     
     if(string) {
-        CGSize constraintSize = CGSizeMake(200, 300);
+        CGSize constraintSize = CGSizeMake(300, 400);
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
         CGRect stringRect = [string boundingRectWithSize:constraintSize options:(NSStringDrawingUsesFontLeading|NSStringDrawingTruncatesLastVisibleLine|NSStringDrawingUsesLineFragmentOrigin) attributes:@{NSFontAttributeName: self.stringLabel.font} context:NULL];
         stringWidth = stringRect.size.width;
